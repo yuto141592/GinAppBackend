@@ -23,7 +23,7 @@ Ginの勉強のために開発しました。
 
 ### バックエンド
 - **Go + Gin**
-- Firebase Admin SDK を使用して **ID トークンを検証**
+  - Firebase Admin SDK を使用して **ID トークンを検証**
   - フロントエンドから送信された `Authorization: Bearer <token>` を検証
   - 有効なら API 実行、不正なら `401 Unauthorized`
 - **Firestore**
