@@ -21,12 +21,16 @@ Ginの勉強のために開発しました。
   - ログイン時に Firebase から `ID トークン (JWT)` を取得
 - 認証済みユーザーのみ `/home` にアクセス可能 (`PrivateRoute` 実装)
 - 環境変数は `.env` で管理し、Vercel の環境変数機能を利用して本番環境へ注入
+- ログインページにMaterial UIを適用
 
 ### バックエンド
 - **Go + Gin**
 - Firebase Admin SDK を使用して **ID トークンを検証**
   - フロントエンドから送信された `Authorization: Bearer <token>` を検証
   - 有効なら API 実行、不正なら `401 Unauthorized`
+- **Firestore**
+  - ユーザーが任意の文字列を登録・編集・削除・閲覧可能
+  - 認証済みユーザーに紐づくデータの CRUD API を Gin で実装
 - **CORS 設定**
   - 開発時は `*`（全許可）
   - 本番では `https://gin-app.vercel.app` のみ許可
