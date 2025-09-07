@@ -2,7 +2,7 @@ serviceURL: https://gin-app.vercel.app
 
 frontend: https://github.com/yuto141592/GinApp
 
-Ginの勉強のために開発しました。
+Ginの勉強のために開発しました。<br>
 OAuth実装の試み→https://github.com/yuto141592/GinAppBackendOAuth
 
 # Firebase + React + Gin (Go) Demo App
